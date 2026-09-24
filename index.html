@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="uz" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mudarris Akademiyasi — Toshkentda Oflayn Arab Tili Kurslari</title>
+  <meta name="description" content="Toshkent bo'ylab 6 ta filialda arab tilida o'qish va tajvidni 0 dan o'rganing. Barcha yoshdagilar uchun maxsus guruhlar.">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: '#27529b',
+              dark: '#1b3c75',
+              light: '#f1f5fa'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-200">
+
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-brand text-white flex items-center justify-center font-bold text-lg shadow-sm">
+          M
+        </div>
+        <span class="font-extrabold text-lg tracking-tight text-brand">MUDARRIS <span class="text-slate-500 font-medium text-xs block md:inline">Akademiyasi</span></span>
+      </div>
+      
+      <div class="flex items-center gap-3">
+        <a href="tel:+998555129900" class="hidden sm:inline-flex items-center text-xs font-semibold text-slate-600 bg-slate-100 hover:bg-slate-200 px-3 py-2 rounded-lg transition">
+          📞 55 512-99-00
+        </a>
+        <a href="#lead-form" class="bg-brand hover:bg-brand-dark text-white text-xs md:text-sm font-semibold px-4 py-2 rounded-xl transition shadow-md shadow-brand/20">
+          Joy band qilish
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="relative pt-10 pb-16 md:pt-16 md:pb-24 overflow-hidden bg-gradient-to-b from-white to-slate-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-12 gap-8 items-center">
+        <div class="md:col-span-7 text-center md:text-left">
+          
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-brand text-xs font-semibold mb-5">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            Toshkent bo'ylab 6 ta filialda qabul ochiq
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-[1.2]">
+            Arab tilida ravon o‘qishni <span class="text-brand">0 dan boshlab</span> o‘rganing
+          </h1>
+
+          <p class="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl mx-auto md:mx-0">
+            Harfsiz savoddan boshlab mustaqil Qur'on va arabcha matnlarni to'g'ri o'qishgacha. Bolalar, ayollar va erkaklar uchun alohida guruhlar.
+          </p>
+
+          <div class="mt-6 flex flex-wrap justify-center md:justify-start gap-4 text-xs md:text-sm font-medium text-slate-700">
+            <div class="flex items-center gap-2 bg-white px-3 py-2 rounded-xl border border-slate-200 shadow-sm">
+              <span class="text-emerald-500 font-bold">✓</span> Yosh chegaralanmagan
+            </div>
+            <div class="flex items-center gap-2 bg-white px-3 py-2 rounded-xl border border-slate-200 shadow-sm">
+              <span class="text-emerald-500 font-bold">✓</span> Tajribali ustozlar
+            </div>
+            <div class="flex items-center gap-2 bg-white px-3 py-2 rounded-xl border border-slate-200 shadow-sm">
+              <span class="text-emerald-500 font-bold">✓</span> Qulay dars vaqtlari
+            </div>
+          </div>
+
+          <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+            <a href="#lead-form" class="inline-flex justify-center items-center px-6 py-4 rounded-xl bg-brand text-white font-bold text-sm md:text-base hover:bg-brand-dark transition shadow-lg shadow-brand/30">
+              Bepul sinov darsiga yozilish →
+            </a>
+            <a href="https://t.me/mudarris_akademiyasi" target="_blank" class="inline-flex justify-center items-center px-6 py-4 rounded-xl bg-white border border-slate-200 text-slate-700 font-semibold text-sm hover:bg-slate-50 transition">
+              Telegram orqali savol berish
+            </a>
+          </div>
+
+        </div>
+
+        <div class="md:col-span-5">
+          <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-xl shadow-slate-200/50 relative">
+            <div class="absolute -top-3 right-6 bg-amber-500 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow">
+              Yangi guruhlar
+            </div>
+            <h3 class="text-xl font-extrabold text-slate-900">Bepul konsultatsiya oling</h3>
+            <p class="text-xs text-slate-500 mt-1">O'zingizga qulay filial va dars vaqtini tanlang</p>
+
+            <form id="hero-lead-form" onsubmit="handleFormSubmit(event, this)" class="mt-6 space-y-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-600 mb-1">Ismingiz</label>
+                <input type="text" name="name" required placeholder="Masalan: Dilshod" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand focus:ring-2 focus:ring-brand/10 outline-none text-sm transition">
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-600 mb-1">Telefon raqamingiz</label>
+                <input type="tel" name="phone" required placeholder="+998 (90) 123-45-67" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand focus:ring-2 focus:ring-brand/10 outline-none text-sm transition">
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-600 mb-1">Sizga yaqin hudud (Filial)</label>
+                <select name="branch" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand focus:ring-2 focus:ring-brand/10 outline-none text-sm bg-white transition">
+                  <option value="Beruniy / Olmazor">Beruniy / Olmazor filiali</option>
+                  <option value="Chilonzor">Chilonzor filiali</option>
+                  <option value="Yunusobod">Yunusobod filiali</option>
+                  <option value="Sergeli / Qo'yliq">Sergeli / Qo'yliq filiali</option>
+                  <option value="Boshqa filial">Menga eng yaqinini maslahat bering</option>
+                </select>
+              </div>
+
+              <button type="submit" class="w-full py-4 rounded-xl bg-brand text-white font-bold text-sm hover:bg-brand-dark transition shadow-md shadow-brand/20">
+                Guruhga yozilish
+              </button>
+              <p class="text-[11px] text-center text-slate-400">Ma'lumotlaringiz maxfiy saqlanadi.</p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white border-y border-slate-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+          Nega aynan Mudarris Akademiyasi?
+        </h2>
+        <p class="text-sm text-slate-500 mt-2">
+          Biz shunchaki nazariya bermaymiz — har bir o'quvchining harflarni to'g'ri talaffuz qilishi (maxraj) va mustaqil o'qiy olishiga kafolatli yondashamiz.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100">
+          <div class="w-10 h-10 rounded-xl bg-blue-100 text-brand flex items-center justify-center font-bold text-lg mb-4">
+            🎯
+          </div>
+          <h4 class="font-bold text-base text-slate-900 mb-2">Har bir yoshga mos guruhlar</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Maktab o'quvchilari, talabalar va kattalar uchun alohida guruhlar tashkil qilingan. O'zingizni erkin his qilasiz.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100">
+          <div class="w-10 h-10 rounded-xl bg-blue-100 text-brand flex items-center justify-center font-bold text-lg mb-4">
+            📖
+          </div>
+          <h4 class="font-bold text-base text-slate-900 mb-2">0 dan boshlab natija</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Umuman harf tanimaydiganlar ham birinchi oydan boshlab harflarni birlashtirib, ravon o'qish bosqichiga chiqadi.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100">
+          <div class="w-10 h-10 rounded-xl bg-blue-100 text-brand flex items-center justify-center font-bold text-lg mb-4">
+            📍
+          </div>
+          <h4 class="font-bold text-base text-slate-900 mb-2">Toshkent bo‘ylab 6 ta manzil</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Yo'lga ko'p vaqt sarflamaysiz. Shaharning asosiy qulay nuqtalarida, metro va bekatlarga yaqin filiallar.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="lead-form" class="py-16 md:py-20 bg-white">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <div class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-blue-50 text-brand text-xl mb-4 font-bold">
+        ✍️
+      </div>
+      <h2 class="text-2xl sm:text-3xl font-black text-slate-900">
+        Hoziroq ro‘yxatdan o‘ting va birinchi darsda qatnashing
+      </h2>
+      <p class="text-sm text-slate-600 mt-2 max-w-md mx-auto">
+        Raqamingizni qoldiring, mutaxassisimiz 15 daqiqa ichida sizga qo'ng'iroq qilib, eng yaqin filial va mos vaqtni tanlashga yordam beradi.
+      </p>
+
+      <div class="mt-8 bg-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-200 text-left">
+        <form onsubmit="handleFormSubmit(event, this)" class="space-y-4">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-slate-600 mb-1">Ism-familiyangiz</label>
+              <input type="text" name="name" required placeholder="Dilshod Ergashev" class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white focus:border-brand focus:ring-2 focus:ring-brand/10 outline-none text-sm transition">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-600 mb-1">Telefon raqamingiz</label>
+              <input type="tel" name="phone" required placeholder="+998 90 123 45 67" class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white focus:border-brand focus:ring-2 focus:ring-brand/10 outline-none text-sm transition">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1">Sizga yaqin filial</label>
+            <select name="branch" class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white focus:border-brand focus:ring-2 focus:ring-brand/10 outline-none text-sm transition">
+              <option value="Beruniy (Farobiy)">Beruniy filiali</option>
+              <option value="Olmazor (Mirzo G'olib)">Olmazor filiali</option>
+              <option value="Chilonzor">Chilonzor filiali</option>
+              <option value="Yunusobod">Yunusobod filiali</option>
+              <option value="Qo'yliq / Sergeli">Qo'yliq / Sergeli filiali</option>
+              <option value="Eng yaqinini tanlash">Boshqa / Menga eng yaqinini tavsiya qiling</option>
+            </select>
+          </div>
+
+          <button type="submit" class="w-full py-4 rounded-xl bg-brand hover:bg-brand-dark text-white font-bold text-sm transition shadow-lg shadow-brand/20">
+            Joyni band qilish va konsultatsiya olish
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="py-8 bg-slate-900 text-slate-400 text-xs border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
+      <div>
+        <span class="text-white font-bold text-sm">Mudarris Arab Tili Akademiyasi</span>
+        <p class="text-slate-500 mt-1">Toshkent shahri bo'ylab 6 ta rasmiy filial</p>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://www.instagram.com/mudarris_akademiyasi/" target="_blank" class="hover:text-white transition">Instagram</a>
+        <a href="https://t.me/mudarris_akademiyasi" target="_blank" class="hover:text-white transition">Telegram</a>
+        <a href="tel:+998555129900" class="hover:text-white transition">Aloqa: 55 512-99-00</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    async function handleFormSubmit(e, form) {
+      e.preventDefault();
+      const btn = form.querySelector('button[type="submit"]');
+      const originalText = btn.innerText;
+      btn.innerText = "Yuborilmoqda...";
+      btn.disabled = true;
+
+      const formData = new FormData(form);
+      const name = formData.get('name');
+      const phone = formData.get('phone');
+      const branch = formData.get('branch');
+
+      alert(`Rahmat, ${name}! Ma'lumotlaringiz qabul qilindi. Mutaxassisimiz tez orada ${phone} raqamingizga qo'ng'iroq qiladi.`);
+      btn.innerText = "Yuborildi ✓";
+      setTimeout(() => {
+        btn.innerText = originalText;
+        btn.disabled = false;
+        form.reset();
+      }, 2000);
+    }
+  </script>
+</body>
+</html>
